@@ -1,21 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <title>Frontend Mentor | Pod request access landing page</title>
+    <title>Pod request access landing page</title>
+  </head>
+  <body>
+    <!-- Global Container -->
+     <div class="flex md:items-center md:justify-end relative bg-[#121725] min-h-screen">
+       <!-- Card Container relative -->
+        <div class="w-[1275px]  flex justify-between md:m-12">
+          <!-- logo -->
+           <div class="">
+            <img src="assets/desktop/logo.svg" alt="" class=" absolute transform md:-translate-x-1/2 md:-translate-y-1/2">
+           </div>
+           <!-- image desktop -->
+            <div class="hidden max-w-[888px] md:block">
+              <img src="assets/desktop/image-host.jpg" alt="" class="w-[888px]">
+            </div>
+            <!-- image mobile -->
+             <div class="md:hidden">
+              <img src="assets/mobile/image-host.jpg" alt="">
+             </div>
+            <!-- content box absolute -->
+             <div class="max-w-3xl opacity-50 md:opacity-100 absolute   md:bottom-0 transform md:-translate-x-28  bg-[#121725] ">
+              <!-- inner container -->
+              <div class="max-w-2xl flex flex-col  space-y-8 md:p-8 p-4 ">
+                <!-- heading -->
+                 <h1 class="uppercase text-white text-3xl">
+                  <span class="text-[#54E6AF]">Publish your podcasts</span> everywhere.
+                 </h1>
+                 <!-- para -->
+                  <div class=" flex- flex-col space-y-8">
+                    <p class="text-white md:text-2xl text-lg ">
+                      Upload your audio to Pod with a single
+                      click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google
+                      Podcasts, Pocket Casts and more!
+                    </p>
+                    <!-- sign in button -->
+                     <div class="flex items-center bg-[#2C344B] justify-between rounded-full pl-4 p-1">
+                      <!-- input -->
+                       <input type="email" placeholder="Email Address" class="bg-[#2C344B] text-white text-lg outline-none">
+                       <!-- button -->
+                        <button class="rounded-full text-center p-4 bg-[#54E6AF]">
+                          Request access
+                        </button>
+                     </div>
 
-</head>
-<body>
-  Publish your podcasts everywhere.
+                  </div>
+                   <!-- icons -->
+                    <div class="flex justify-between ">
+                      <img src="assets/desktop/spotify.svg" alt="">
+                      <img src="assets/desktop/apple-podcast.svg" alt="">
+                      <img src="assets/desktop/google-podcasts.svg" alt="">
+                      <img src="assets/desktop/pocket-casts.svg" alt="">
+                    </div>
+                    
+                  </div>
+                </div>
+                <!-- pattern Daigram absolute -->
+                 <div class="absolute md:right-0 bottom-0">
+                  <img src="assets/desktop/bg-pattern-dots.svg" alt="" class="transform ">
+                 </div>
 
-  Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-  Apple Podcasts, Google Podcasts, Pocket Casts and more!
-
-  Request access
-</body>
+        </div>
+     </div>
+     
+  </body>
 </html>
